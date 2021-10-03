@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class EventsPage extends StatelessWidget {
   @override
@@ -10,11 +11,6 @@ class EventsPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Image(
-                image: AssetImage("assets/images/cogs.gif"),
-                width: 150,
-                height: 150,
-              ),
               Text(
                 "Organizing an event ...",
                 style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
