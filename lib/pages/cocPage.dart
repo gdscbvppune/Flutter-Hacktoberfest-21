@@ -10,6 +10,9 @@ class _COCPageState extends State<COCPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Code of Conduct'),
+      ),
       body: Container(
         color: Colors.grey[200],
         constraints: BoxConstraints.expand(),

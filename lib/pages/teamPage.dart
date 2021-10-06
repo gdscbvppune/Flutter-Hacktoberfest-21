@@ -5,6 +5,13 @@ class TeamPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Team'),
+      ),
+      body: Center(
+        child: Text('Team page is here'),
+      ),
+    );
   }
 }
