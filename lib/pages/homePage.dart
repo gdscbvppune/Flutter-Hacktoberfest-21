@@ -1,7 +1,7 @@
+import 'package:dsc_web_app/pages/main_drawer.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 final String eventName1 = "{Event Name Here}";
@@ -37,7 +37,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Home'),
+      ),
+      drawer: MainDrawer(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(10.0),
@@ -171,31 +175,6 @@ class _HomePageState extends State<HomePage> {
                           0,
                           0,
                           0.0),
-                      // Row(
-                      //   mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      //   children: <Widget>[
-                      //     svgAsset("assets/svg/angular.svg",
-                      //         "https://angular.io/", 40.0, 40.0),
-                      //     VerticalDivider(),
-                      //     svgAsset("assets/svg/gcp.svg",
-                      //         "https://cloud.google.com/", 50.0, 50.0),
-                      //     VerticalDivider(),
-                      //     svgAsset("assets/svg/android.svg",
-                      //         "https://www.android.com/", 40.0, 40.0),
-                      //     VerticalDivider(),
-                      //     svgAsset(
-                      //         "assets/svg/aog.svg",
-                      //         "https://developers.google.com/actions/",
-                      //         40.0,
-                      //         40.0),
-                      //     VerticalDivider(),
-                      //     svgAsset("assets/svg/firebase.svg",
-                      //         "https://firebase.google.com/", 40.0, 40.0),
-                      //     VerticalDivider(),
-                      //     svgAsset("assets/svg/tf.svg",
-                      //         "https://www.tensorflow.org/", 40.0, 40.0),
-                      //   ],
-                      // ),
                       textStyleNormal(
                           "\n",
                           Alignment.centerLeft,
@@ -897,17 +876,6 @@ class _HomePageState extends State<HomePage> {
       height: h,
     );
   }
-
-  // svgAsset(String asset, String url, double w, double h) {
-  //   return GestureDetector(
-  //     onTap: () => _launchURL(url),
-  //     child: SvgPicture.asset(
-  //       asset,
-  //       width: w,
-  //       height: h,
-  //     ),
-  //   );
-  // }
 
   iconAsset(icon, color, size) {
     return Icon(

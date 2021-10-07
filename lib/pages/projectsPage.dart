@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 class ProjectsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Projects'),
+      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(bottom: 100.0),
