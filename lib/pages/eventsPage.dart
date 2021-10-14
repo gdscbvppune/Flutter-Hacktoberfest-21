@@ -14,6 +14,12 @@ class EventsPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              SpinKitSquareCircle(
+                color: Colors.blue,
+              ),
+              SizedBox(
+                height: 50,
+              ),
               Text(
                 "Organizing an event ...",
                 style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
