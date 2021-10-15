@@ -1,8 +1,8 @@
-import 'package:dsc_web_app/pages/main_drawer.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
+import './main_drawer.dart';
 
 final String eventName1 = "{Event Name Here}";
 final String eventName2 = "{Event Name Here}";
@@ -100,9 +100,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-
               Divider(color: Colors.white),
-
               Card(
                 color: Color.fromRGBO(240, 240, 240, 1.0),
                 child: Padding(
@@ -363,9 +361,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-
               Divider(color: Colors.white),
-
               Card(
                 color: Color.fromRGBO(76, 74, 120, 1.0),
                 child: Padding(
@@ -454,9 +450,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-
               Divider(color: Colors.white),
-
               Card(
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
@@ -564,11 +558,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-
               Divider(color: Colors.white),
-
-              //TODO: Implement Feature Event Card
-
               Card(
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
@@ -693,8 +683,6 @@ class _HomePageState extends State<HomePage> {
                           onPressed: () {},
                           color: Colors.white,
                           padding: EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
-                          // child: svgAsset("assets/svg/gdg-x.svg",
-                          //     "https://github.com/gdg-x", 50.0, 50.0),
                         ),
                       ),
                       textStyleNormal(
